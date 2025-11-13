@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+
+    <form action="/submit" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </td>
+                <td>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </td>
+                <td>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </td>
+            </tr>
+        </table>
+
+        <label for="Direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <div class="selectores">
+
+
+
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad" required>
+                            <option value="" disabled selected>Selecciona una ciudad</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Zaragoza">Zaragoza</option>
+                        </select>
+
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                            <option value="" disabled selected>Selecciona un país</option>
+                            <option value="España">España</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Alemania">Alemania</option>
+                        </select>
+
+        </div>
+
+
+
+
+        <label for="fechanacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechanacimiento" name="fechanacimiento" required>
+
+
+
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <div class="terminos">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Enviar" class="boton">
+    </form>
+</body>
+
+</html>
