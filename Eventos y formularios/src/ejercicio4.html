@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../scripts/ejercicio4.js"></script>
-    <title>Document</title>
+    <title>Ejercicio 4 - Formulario</title>
 </head>
-
 <body>
+    <form id="miFormulario">
+        
+        
+        <input type="text" id="tlfn" onkeypress="return validarNumeros (evnt)" /> <br><br>
 
-    <form action="" method="post">
-        <input type="text" id="tlfn" onkeypress="return validarNumeros(evnt)" /> <br>
+       
+        <label>Franja horaria:</label> <br>
+        <input type="checkbox" name="franjaHoraria" value="6-14"> 6:00 a 14:00 <br>
+        <input type="checkbox" name="franjaHoraria" value="14-20"> 14:00 a 20:00 <br>
+        <input type="checkbox" name="franjaHoraria" value="20-1"> 20:00 a 1:00 <br><br>
 
-        <label for="franjaHoraria">Franja horaria:</label> <br>
-        <input type="checkbox" name="franjaHoraria" id=""> 6:00 a 14:00 <br>
-        <input type="checkbox" name="franjaHoraria" id=""> 14:00 a 20:00 <br>
-        <input type="checkbox" name="franjaHoraria" id=""> 20:00 a 1:00 <br>
+        
+        <label>Tipo de plan:</label> <br>
+        <input type="radio" name="prepago" value="si"> Si
+        <input type="radio" name="prepago" value="no"> No
+        <br><br>
 
-        <label for="Prepago">Es prepago:</label> <br>
-        <input type="radio" name="Prepago"> Si
-        <input type="radio" name="Contrato"> No
-        <br>
+        
         <label for="compania">Selecciona tu compañía telefónica:</label>
         <select id="compania" name="compania">
             <option value="">Selecciona una compañía</option>
             <option value="movistar">Movistar</option>
-             <option value="claro">Claro</option>
+            <option value="claro">Claro</option>
             <option value="telcel">Telcel</option>
             <option value="entel">Entel</option>
-        <option value="tigo">Tigo</option>
-        </select>
-        <br>
-        <label for="observaciones"> observaciones</label><br>
-        <textarea name="observaciones" id="observaciones" cols="30" rows="10" maxlength="140"></textarea>
+            <option value="tigo">Tigo</option>
+        </select><br><br>
 
-        <br><br>
+        
+        <label for="observaciones">Observaciones:</label><br>
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10" maxlength="140"></textarea>
+        
 
         <button type="submit">Enviar</button>
     </form>
 
-
-
-
+    
 </body>
-
 </html>
