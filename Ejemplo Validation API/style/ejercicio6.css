@@ -1,0 +1,30 @@
+section {
+    margin: 25px;
+    padding: 15px;
+}
+
+form * {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form legend,
+form label {
+    padding: 0;
+    font-weight: bold;
+}
+
+form button {
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #eee;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+form button:hover {
+    background: #ccc;
+    cursor: pointer;
+}

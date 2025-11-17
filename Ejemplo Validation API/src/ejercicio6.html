@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/ejercicio6.css" />
+    <script src="../scripts/ejercicio6.js"></script>
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <section>
+        <form method="get" action="#">
+            <label>Nombre
+          <input type="text" name="nombreCliente" required />
+        </label>
+            <label>Teléfono
+          <input type="tel" name="telefono" required />
+        </label>
+            <label>Correo electrónico
+          <input type="email" name="correoE" />
+           <div class="error" id="errorTelefono">Formato incorrecto. Use: xxx xxx xxx (9 dígitos)</div>
+        </label>
+
+            <fieldset>
+                <legend>¿Qué vehículo necesita?</legend>
+                <label>
+            <input type="radio" name="taxi" required value="coche" /> Hasta 5  ><br />
+          <label>
+            <input type="radio" name="taxi" required value="furgoneta" /> Hasta9 plazas </label><br />
+                <label>
+            <input type="radio" name="taxi" required value="moto" /> Moto</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <label>
+            <input type="checkbox" name="extras" value="asientoBebe" /> Silla para bebé
+          </label>
+                <label>
+            <input type="checkbox" name="extras" value="sillaRuedas" /> Acceso para silla de ruedas
+          </label>
+                <label>
+            <input type="checkbox" name="extras" value="casco" /> Casco  </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del Destino</legend>
+
+                <label>Fecha de la reserva </label>
+                <input type="date" name="fecha" required /><br />
+                <label>Destino </label>
+                <select id="destino">
+            <option value="aeropuerto">Aeropuerto</option>
+            <option value="estacionTren">Estación de tren</option>
+            <option value="direccionPropia">Otros</option>
+          </select>
+            </fieldset>
+            <button>Reservar</button>
+        </form>
+    </section>
+</body>
+
+</html>

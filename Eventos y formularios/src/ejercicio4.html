@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../scripts/ejercicio4.js"></script>
     <title>Ejercicio 4 - Formulario</title>
 </head>
+
 <body>
     <form id="miFormulario">
-        
-        
+
+
         <input type="text" id="tlfn" onkeypress="return validarNumeros (evnt)" /> <br><br>
 
-       
+
         <label>Franja horaria:</label> <br>
         <input type="checkbox" name="franjaHoraria" value="6-14"> 6:00 a 14:00 <br>
         <input type="checkbox" name="franjaHoraria" value="14-20"> 14:00 a 20:00 <br>
         <input type="checkbox" name="franjaHoraria" value="20-1"> 20:00 a 1:00 <br><br>
 
-        
+
         <label>Tipo de plan:</label> <br>
-        <input type="radio" name="prepago" value="si"> Si
-        <input type="radio" name="prepago" value="no"> No
+        <input type="radio" name="prepagoSi" value="si"> Si
+        <input type="radio" name="prepagoNO" value="no"> No
         <br><br>
 
-        
+
         <label for="compania">Selecciona tu compañía telefónica:</label>
         <select id="compania" name="compania">
             <option value="">Selecciona una compañía</option>
@@ -35,14 +37,15 @@
             <option value="tigo">Tigo</option>
         </select><br><br>
 
-        
+
         <label for="observaciones">Observaciones:</label><br>
         <textarea name="observaciones" id="observaciones" cols="30" rows="10" maxlength="140"></textarea>
-        
+        <span id="charCount">0</span>
 
         <button type="submit">Enviar</button>
     </form>
 
-    
+
 </body>
+
 </html>
