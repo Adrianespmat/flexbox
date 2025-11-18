@@ -1,0 +1,97 @@
+/* --- Layout general --- */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* --- Panel izquierdo con imagen --- */
+
+.left {
+    flex: 1;
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* --- Panel derecho oscuro --- */
+
+.right {
+    flex: 1;
+    background: #1e1e1e;
+    color: white;
+    position: relative;
+    /* para posicionar los iconos */
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    padding: 0 60px;
+}
+
+
+/* --- Íconos arriba a la derecha --- */
+
+.social {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* --- Contenido --- */
+
+.content {
+    max-width: 350px;
+}
+
+.content h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.content h2 {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #cccccc;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+
+/* --- Botón --- */
+
+button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
